@@ -1,4 +1,9 @@
-def selection(array):
+def selection(array: list):
+    """Sort a list using selection sort.
+
+    Args:
+        array (list): unsorted array
+    """
     n = len(array)
     for i in range(n - 1):
         i_min = i
