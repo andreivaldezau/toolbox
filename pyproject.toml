@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "toolbox"
+version = "0.1.0"
+description = "Repository for useful code implementations."
+authors = ["Andrei Valdez <andreivaldezau@gmail.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
