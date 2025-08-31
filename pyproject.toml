@@ -5,7 +5,11 @@ description = "Repository for useful code implementations."
 authors = ["Andrei Valdez <andreivaldezau@gmail.com>"]
 license = "Apache License 2.0"
 readme = "README.md"
-package-mode = false
+package-mode = true
+packages = [
+    { include = "algorithms", from = "src" },
+    { include = "data_structures", from = "src" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.13"
@@ -14,7 +18,7 @@ python = "^3.13"
 pytest = "^8.3.4"
 
 [tool.pytest.ini_options]
-pythonpath = "."
+addopts = "-ra -q"
 
 [build-system]
 requires = ["poetry-core"]
