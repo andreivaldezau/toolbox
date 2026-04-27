@@ -1,25 +1,12 @@
-[tool.poetry]
+[project]
 name = "toolbox"
 version = "0.1.0"
-description = "Repository for useful code implementations."
-authors = ["Andrei Valdez <andreivaldezau@gmail.com>"]
-license = "Apache License 2.0"
+description = "Add your description here"
 readme = "README.md"
-package-mode = true
-packages = [
-    { include = "algorithms", from = "src" },
-    { include = "data_structures", from = "src" },
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
 ]
-
-[tool.poetry.dependencies]
-python = "^3.13"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.4"
-
-[tool.pytest.ini_options]
-addopts = "-ra -q"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
